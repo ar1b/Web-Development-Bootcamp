@@ -19,11 +19,79 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+
+  
+    .main-container {
+      height: 748px;
+      width: 748px;
+      background-color: #232629;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 120px 164px 22px ;
+      gap: 9px
+
+    }
+
+    .item-red {
+      background-color: #E72F24;
+    }
+
+    .item-white1 {
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+
+    .item-white2 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .item-white3 {
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .item-blue {
+      background-color: #004592;
+      border-bottom: 10px solid #232629;
+    }
+
+    .item-white4 {
+      background-color: #F0F1EC;
+    }
+
+    .item-white5 {
+      background-color: #F0F1EC;
+    }
+
+    .item-yellow {
+      background-color: #F9D01E;
+    }
+
+    .item-black {
+      background-color: #232629;
+      grid-column: span 2;     
+    }
+
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+  <div class="main-container">
+    <div class="item-red"></div>
+    <div class="item-white1"></div>
+    <div class="item-white2"></div>
+    <div class="item-white3"></div>
+
+    <div class="item-blue"></div>
+    <div class="item-white4"></div>
+
+    <div class="item-white5"></div>
+    <div class="item-yellow"></div>
+    <div class="item-black"></div>
+  </div>
 </body>
 
 </html>
